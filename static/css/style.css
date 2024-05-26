@@ -1,0 +1,51 @@
+/* style.css */
+body {
+    display: flex;
+    flex-direction: column; /* Visa element i kolumnlayout */
+    align-items: center; /* Centrera innehållet horisontellt */
+    min-height: 100vh; /* Hela sidans höjd */
+    margin: 0; /* Ta bort standardmarginalen */
+}
+
+header {
+    text-align: center; /* Centrera text inom header */
+    width: 100%; /* Full bredd av headern */
+    padding: 20px; /* Extra utrymme runt headern för estetik */
+}
+
+.container {
+    width: 100%; /* Full bredd av container */
+    max-width: 400px; /* Maximal bredd av container */
+    padding: 20px; /* Extra utrymme runt container för estetik */
+    display: flex; /* Använd flexbox för att centrera innehållet */
+    flex-direction: column; /* Visa element i kolumnlayout */
+    align-items: center; /* Centrera innehållet horisontellt */
+    background-color: lightblue; /* Ändra bakgrundsfärgen på container */
+    border-radius: 10px; /* Lägg till rundade hörn */
+    box-sizing: border-box; /* Inkludera padding och border i elementets totala bredd */
+    overflow: hidden; /* Dölj eventuellt överflödigt innehåll */
+    min-height: 500px; /* Minimihöjd för containern */
+}
+
+/* Mobilanpassning */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Minska bredden på container på mindre skärmar */
+    }
+}
+
+/* Justera tabellceller */
+table {
+    border-collapse: collapse; /* Ta bort mellanrum mellan celler */
+    width: 100%; /* Full bredd av tabellen */
+}
+
+th, td {
+    padding: 8px; /* Lägg till padding för att öka avståndet mellan cellerna */
+    text-align: left; /* Vänsterjustera text */
+    border-bottom: 1px solid #ddd; /* Lägg till en bottenram mellan celler */
+}
+
+.button-container {
+    margin-top: 20px; /* Lägg till utrymme över knappcontainer för att centrera knappen vertikalt */
+}

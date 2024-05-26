@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blandningsberäknare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container"><header>
+        <h1>Blandningsberäknare</h1>
+    </header>
+    <form method="post">
+        <label for="material">Välj material:</label>
+        <select name="material" id="material">
+            {% for material in materials %}
+            <option value="{{ material }}">{{ material }}</option>
+            {% endfor %}
+        </select><br><br>
+        <label for="product_a_amount">Ange mängden av produkt A:</label>
+        <div></div>
+        <input type="number" name="product_a_amount" id="product_a_amount" step="0.01" required><br><br>
+        <div class="button-container">
+        <button type="submit">Beräkna</button>
+        </div>
+    </form>
+    {% if result %}
+    <div class="result">
+        <h2>Resultat:</h2>
+        <table>
+            <tr>
+                <th>Del</th>
+                <th>Mängd</th>
+            </tr>
+            {% for a_amount, b_amount, c_amount in result %}
+            <tr>
+                <td>A-del:</td>
+                <td>{{ a_amount }}</td>
+            </tr>
+            <tr>
+                <td>B-del:</td>
+                <td>{{ b_amount }}</td>
+            </tr>
+            <tr>
+                <td>C-del:</td>
+                <td>{{ c_amount }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+</div>
+</div class="container">
+</body>
+</html>
