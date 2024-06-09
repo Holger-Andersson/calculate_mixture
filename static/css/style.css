@@ -1,51 +1,90 @@
-/* style.css */
 body {
     display: flex;
-    flex-direction: column; /* Visa element i kolumnlayout */
-    align-items: center; /* Centrera innehållet horisontellt */
-    min-height: 100vh; /* Hela sidans höjd */
-    margin: 0; /* Ta bort standardmarginalen */
-}
-
-header {
-    text-align: center; /* Centrera text inom header */
-    width: 100%; /* Full bredd av headern */
-    padding: 20px; /* Extra utrymme runt headern för estetik */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
 }
 
 .container {
-    width: 100%; /* Full bredd av container */
-    max-width: 400px; /* Maximal bredd av container */
-    padding: 20px; /* Extra utrymme runt container för estetik */
-    display: flex; /* Använd flexbox för att centrera innehållet */
-    flex-direction: column; /* Visa element i kolumnlayout */
-    align-items: center; /* Centrera innehållet horisontellt */
-    background-color: lightblue; /* Ändra bakgrundsfärgen på container */
-    border-radius: 10px; /* Lägg till rundade hörn */
-    box-sizing: border-box; /* Inkludera padding och border i elementets totala bredd */
-    overflow: hidden; /* Dölj eventuellt överflödigt innehåll */
-    min-height: 500px; /* Minimihöjd för containern */
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Mobilanpassning */
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 90%; /* Minska bredden på container på mindre skärmar */
-    }
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
 
-/* Justera tabellceller */
-table {
-    border-collapse: collapse; /* Ta bort mellanrum mellan celler */
-    width: 100%; /* Full bredd av tabellen */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
 }
 
-th, td {
-    padding: 8px; /* Lägg till padding för att öka avståndet mellan cellerna */
-    text-align: left; /* Vänsterjustera text */
-    border-bottom: 1px solid #ddd; /* Lägg till en bottenram mellan celler */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .button-container {
-    margin-top: 20px; /* Lägg till utrymme över knappcontainer för att centrera knappen vertikalt */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 10px;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
