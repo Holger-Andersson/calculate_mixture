@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMPOSITKUNGEN 2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>KOMPOSITKUNGEN 2.0</header>
+    <form id="mix-form">
+      <div class="form-group">
+        <label for="material">Välj material:</label>
+        <select name="material" id="material">
+          <option value="855">855</option>
+          <option value="858">858</option>
+          <option value="BX2">BX2</option>
+          <option value="MX1">MX1</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="product_a_amount">Hur många gram A-del?</label>
+        <input type="number" name="product_a_amount" id="product_a_amount" step="1" required placeholder="Gram">
+      </div>
+      <button type="submit">Beräkna</button>
+    </form>
+    <div class="result" id="result-container"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Grundinställningar */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Container centrerad med maxbredd för läsbarhet */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Rubrik */
+header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Formulärgrupper */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Inputfält och select */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Knappar */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Resultatsektionen */
+.result {
+  margin-top: 24px;
+}
+
+/* Enkel tabell för resultat */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
