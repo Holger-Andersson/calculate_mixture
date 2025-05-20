@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KOMPOSITKUNGEN 2.0</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="timer-widget.css" />
+  <script defer src="app.js"></script> <!-- din befintliga app -->
+  <script defer src="timer-widget.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>KOMPOSITKUNGEN 2.0</header>
-    <form id="mix-form">
-      <div class="form-group">
-        <label for="material">Välj material:</label>
-        <select name="material" id="material">
-          <option value="855">855</option>
-          <option value="858">858</option>
-          <option value="BX2">BX2</option>
-          <option value="MX1">MX1</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="product_a_amount">Hur många gram A-del?</label>
-        <input type="number" name="product_a_amount" id="product_a_amount" step="1" required placeholder="Gram">
-      </div>
-      <button type="submit">Beräkna</button>
-    </form>
-    <div class="result" id="result-container"></div>
-  </div>
-  <script src="app.js"></script>
+  <!-- Allt UI byggs av JS, inga ytterligare element behövs här -->
+  <div id="root"></div>
 </body>
 </html>
